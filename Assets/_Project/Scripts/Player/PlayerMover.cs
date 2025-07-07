@@ -12,8 +12,6 @@ public class PlayerMover : MonoBehaviour
     [SerializeField] private float _currentSpeed;
     [SerializeField] private float _animationInterpolation;
 
-    [SerializeField] private Transform _aimTarget;
-
     public Rigidbody RigidbodyComponent => _rigidbody;
     public Vector3 ForwardDirection => transform.forward;
 
@@ -56,10 +54,6 @@ public class PlayerMover : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
             _animator.SetTrigger("Jump");
-
-        Ray desiredTargetRay = _camera.GetComponent<Camera>().ScreenPointToRay(new Vector2 (Screen.width * 0.5f, Screen.height * 0.5f));
-        Vector3 desiredTargetPosition = desiredTargetRay.origin + desiredTargetRay.direction * 0.5f;
-        _aimTarget.position = desiredTargetPosition;
     }
 
     void FixedUpdate()
@@ -71,7 +65,6 @@ public class PlayerMover : MonoBehaviour
         Vector3 movingVector;
         movingVector = Vector3.ClampMagnitude(camF.normalized * Input.GetAxis("Vertical") * _currentSpeed + camR.normalized * Input.GetAxis("Horizontal") * _currentSpeed, _currentSpeed);
         _animator.SetFloat("magnitude", movingVector.magnitude / _currentSpeed);
-        Debug.Log(movingVector.magnitude / _currentSpeed);
         _rigidbody.linearVelocity = new Vector3(movingVector.x, _rigidbody.linearVelocity.y, movingVector.z);
         _rigidbody.angularVelocity = Vector3.zero;
     }
