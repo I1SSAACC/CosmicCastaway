@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c43c3b48f117e1b47b7c26cdf0b8d495, type: 3}
-  m_Name: Apple
+  m_Name: Water
   m_EditorClassIdentifier: 
-  itemName: Apple
+  itemName: Water
   maximumAmount: 20
   itemPrefab: {fileID: 7273151530918710917, guid: 5c170a7b51068c64698dd09ddd3c0bb7, type: 3}
-  icon: {fileID: 21300000, guid: 50cfdc1086a894cb984cb3eb05b776b1, type: 3}
+  icon: {fileID: 21300000, guid: 3b533af53070a405eae20dc1095b6230, type: 3}
   itemType: 1
-  itemDescription: The Plasma Cutter Builder helps you build and improve your base.
+  itemDescription: Water
   isConsumeable: 1
   changeHealth: 0
-  changeHunger: 10
-  changeThirst: 0
+  changeHunger: 0
+  changeThirst: 10

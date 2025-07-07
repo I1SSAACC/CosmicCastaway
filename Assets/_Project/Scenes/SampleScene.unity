@@ -2403,7 +2403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a58bf1db747d00d4aa0aec3e9f7993bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: 0b4710f7699a30641b6f30ef16b022eb, type: 2}
+  item: {fileID: 11400000, guid: db9119a3c8387d0478b949728a6beb7b, type: 2}
   amount: 10
 --- !u!65 &751868096
 BoxCollider:
@@ -4531,7 +4531,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a58bf1db747d00d4aa0aec3e9f7993bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: 0b4710f7699a30641b6f30ef16b022eb, type: 2}
+  item: {fileID: 11400000, guid: db9119a3c8387d0478b949728a6beb7b, type: 2}
   amount: 10
 --- !u!65 &1847414602
 BoxCollider:
@@ -6834,7 +6834,7 @@ MonoBehaviour:
   currentQuickslotID: 0
   selectedSprite: {fileID: 21300000, guid: 3bd4a41ba285b704fa6565859ddc06e0, type: 3}
   notSelectedSprite: {fileID: 21300000, guid: 396b50eb6dfe246cba1ce8c87d0a6b64, type: 3}
-  healthText: {fileID: 1051417858230917314}
+  _indicators: {fileID: 705694167}
 --- !u!1 &1804082822198460095
 GameObject:
   m_ObjectHideFlags: 0
@@ -10766,7 +10766,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a58bf1db747d00d4aa0aec3e9f7993bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: 0b4710f7699a30641b6f30ef16b022eb, type: 2}
+  item: {fileID: 11400000, guid: db9119a3c8387d0478b949728a6beb7b, type: 2}
   amount: 10
 --- !u!1 &8218083708446262678
 GameObject:
