@@ -2232,16 +2232,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db37ad9414c944942b09f9375dba423c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthBar: {fileID: 1385507683783060290}
-  foodBar: {fileID: 9867102361474659}
-  waterBar: {fileID: 5991832257568530482}
-  healthAmount: 100
-  foodAmount: 100
-  waterAmount: 100
-  secondsToEmptyFood: 60
-  secondsToEmptyWater: 30
-  secondsToEmptyHealth: 60
-  isInWater: 0
+  _healthBar: {fileID: 1385507683783060290}
+  _foodBar: {fileID: 9867102361474659}
+  _waterBar: {fileID: 5991832257568530482}
+  _healthAmount: 100
+  _foodAmount: 100
+  _waterAmount: 100
+  _secondsToEmptyFood: 60
+  _secondsToEmptyWater: 30
+  _secondsToEmptyHealth: 60
+  _changeFactor: 6
 --- !u!1001 &726870124
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2495,7 +2495,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &832575518
 MonoBehaviour:
   m_ObjectHideFlags: 0
