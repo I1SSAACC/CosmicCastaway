@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 5690203887491514135}
   - component: {fileID: 1716885336430392482}
   - component: {fileID: 420222116875516067}
-  - component: {fileID: 8658407400634370987}
+  - component: {fileID: 8483284448579389025}
   m_Layer: 0
-  m_Name: SpaceDebrisSpawner
+  m_Name: SpaceObjectSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 20, y: 10, z: 1}
+  m_LocalScale: {x: 700, y: 450, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -50,7 +50,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5087937826171091626}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -109,7 +109,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8658407400634370987
+--- !u!114 &8483284448579389025
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -122,10 +122,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _prefabs:
-  - {fileID: 4383202523358312455, guid: b63d239b711ef5b4cb9bb5294cd6ed45, type: 3}
-  - {fileID: 4383202523358312455, guid: 5b513a1f8a838b245ad5a2043bcf247f, type: 3}
-  - {fileID: 4383202523358312455, guid: 20fdd103df813c443afc916e87640906, type: 3}
-  _maximumObjects: 100
-  _spawnInterval: {x: 0.1, y: 4}
+  - {fileID: 4483602284232767183, guid: b21e598681eb661479f29070a6b0b397, type: 3}
+  - {fileID: 2903332683850904478, guid: d1b0d12cb9f0a9e4cb9809ffe6042b55, type: 3}
   _spawnArea: {fileID: 420222116875516067}
-  _despawnDistance: 1500
+  _spawnInterval: {x: 0.05, y: 0.5}
+  _despawnDistance: 4000
+  _maxPoolSize: 5000

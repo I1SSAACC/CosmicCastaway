@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 3481165473134429959}
   - component: {fileID: 2471704998224900660}
   - component: {fileID: 7237206932612410025}
-  - component: {fileID: 2903332683850904478}
   - component: {fileID: 2056490460787978295}
   - component: {fileID: 8474845014982208276}
+  - component: {fileID: 2903332683850904478}
   m_Layer: 0
   m_Name: Rare_Meteor_1
   m_TagString: Untagged
@@ -89,25 +89,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &2903332683850904478
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8143251891952765719}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1725728dc6cab34c86fc69791ebeedf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _rigidbody: {fileID: 2056490460787978295}
-  _movingSpeedLimits: {x: 1, y: 50}
-  _rotationSpeedLimits: {x: 0.2, y: 7}
-  _scaleFactorLimits: {x: 0.4, y: 4}
-  _massLimits: {x: 1500, y: 4500}
-  _debrisAngleDeviation: 3
-  _chance: 0.15
 --- !u!54 &2056490460787978295
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -157,3 +138,22 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -2432090755550338912, guid: 9187cb3a073288a469c5d7afb2a6b76f, type: 3}
+--- !u!114 &2903332683850904478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8143251891952765719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1725728dc6cab34c86fc69791ebeedf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rigidbody: {fileID: 2056490460787978295}
+  _speedRange: {x: 20, y: 100}
+  _rotationSpeedLimits: {x: 0.2, y: 7}
+  _scaleLimits: {x: 0.5, y: 7}
+  _massLimits: {x: 1500, y: 4500}
+  _maxAngleDeviation: 8
+  _spawnWeight: 0.5
