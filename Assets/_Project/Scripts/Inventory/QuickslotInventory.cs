@@ -3,12 +3,12 @@ using UnityEngine.UI;
 
 public class QuickslotInventory : MonoBehaviour
 {
+    [SerializeField] private Player _player;
     public Transform quickslotParent;
     public InventoryManager inventoryManager;
     public int currentQuickslotID = 0;
     public Sprite selectedSprite;
     public Sprite notSelectedSprite;
-    public Indicators _indicators;
 
     void Update()
     {
@@ -86,12 +86,11 @@ public class QuickslotInventory : MonoBehaviour
         }
     }
 
-    private void ChangeHunger(float changeHunger) =>
-        _indicators.ChangeFoodAmount(changeHunger);
-    private void ChangeThirst(float changeThirst) =>
-        _indicators.ChangeWaterAmount(changeThirst);
+    private void ChangeHunger(float value) =>
+        _player.TakeFood(value);
+    private void ChangeThirst(float value) =>
+        _player.TakeWater(value);
 
-    private void ChangeHealth(float changeHealth) =>
-       _indicators.ChangeHealthAmount(changeHealth);
-
+    private void ChangeHealth(float value) =>
+       _player.TakeHill(value);
 }
