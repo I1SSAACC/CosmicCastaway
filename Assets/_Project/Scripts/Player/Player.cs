@@ -10,8 +10,8 @@ public class Player : MonoBehaviour
         _health.Increase(value);
 
     public void TakeWater(float value) =>
-        _satiety.Increase(value);
+        _hydration.Increase(value);
 
     public void TakeFood(float value) =>
-        _hydration.Increase(value);
+        _satiety.Increase(value);
 }
